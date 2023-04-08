@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/kafka")
-public class KafkaProducerController
+public class Kafkacontroller
 {
     private final KafkaProducerService producerService;
 
     @Autowired
-    public KafkaProducerController(KafkaProducerService producerService)
+    public Kafkacontroller(KafkaProducerService producerService)
     {
         this.producerService = producerService;
     }
@@ -26,4 +26,5 @@ public class KafkaProducerController
     {
         this.producerService.sendMessage(message);
     }
+
 }
