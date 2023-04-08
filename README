@@ -4,3 +4,8 @@ cd %Kafka_HOME%
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 .\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 2 --topic test
+
+//TODO: Test case for service calls
+//TODO: Publish class serialized to JSON and READ de-serialized to a class
+//TODO: Build a docker image
+//TODO: Deploy the service to AWS Cloud
