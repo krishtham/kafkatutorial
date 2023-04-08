@@ -13,9 +13,10 @@ public class KafkaConsumerService
 
 
     @KafkaListener(topics = Constants.TOPIC_NAME, groupId = Constants.GROUP_ID)
-    public void consume(String message)
+    public String consume(String message)
     {
-
+        LOGGER.info("Message Received"+message);
+        return message;
     }
 
 
